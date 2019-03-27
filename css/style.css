@@ -734,6 +734,18 @@ body.mobile-nav-active #mobile-nav-toggle {
   padding: 0 20px 20px 20px;
 }
 
+.img-parcours{
+  transition: 0.4s;
+  transition: all .4s ease-in-out;
+
+}
+
+.img-parcours:hover
+{
+  
+  transform: scale(1.03);
+}
+
 
 
 /* Services Section
