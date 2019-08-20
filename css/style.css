@@ -187,7 +187,7 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -1655,3 +1655,145 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline;
   }
 }
+
+
+
+#post-header {
+    padding-top: 240px;
+    padding-bottom: 80px;
+}
+.page-header {
+    position: relative;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #1b1c1e;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+#introduction .carousel-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#introduction .carousel-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#introduction .carousel-background img {
+  max-width: 100%;
+}
+
+#introduction .carousel-content {
+  text-align: center;
+}
+
+#intro h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro p {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#introduction .carousel-fade {
+  overflow: hidden;
+}
+
+#introduction .carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
+}
+
+#introduction .carousel-fade .carousel-inner .carousel-item,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-left,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#introduction .carousel-fade .carousel-inner .active,
+#introduction .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#introduction .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#introduction .carousel-fade .carousel-inner .carousel-item-next,
+#introduction .carousel-fade .carousel-inner .carousel-item-prev,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-left,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#introduction .carousel-control-prev,
+#introduction .carousel-control-next {
+  width: 10%;
+}
+
+#introduction .carousel-control-next-icon,
+#introduction .carousel-control-prev-icon {
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+}
+
+#introduction .carousel-indicators li {
+  cursor: pointer;
+}
+
+#introduction .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #0cf;
+}
+
+#introduction .btn-get-started:hover {
+  background: #fff;
+  color: #0cf;
+}
+
