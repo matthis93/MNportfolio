@@ -10,8 +10,8 @@
 --------------------------------------------------------------*/
 
 body {
-  background: #fff;
-  color: #666666;
+  background-color: #161616 ;
+  color: #fff;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -39,7 +39,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Orgon-Thin", sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
@@ -187,7 +187,7 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.4);
   position: absolute;
   height: 100%;
   width: 100%;
@@ -218,7 +218,9 @@ h6 {
 }
 
 #intro .carousel-background img {
-  max-width: 100%;
+max-width: 100%;
+height: 1930,8896px;
+
 }
 
 #intro .carousel-content {
@@ -285,22 +287,28 @@ h6 {
 }
 
 #intro .btn-get-started {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 1px;
-  display: inline-block;
-  padding: 8px 32px;
-  border-radius: 50px;
-  transition: 0.5s;
-  margin: 10px;
-  color: #fff;
-  background: #0cf;
+  font-family: "Orgon-Thin", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255);
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    /*background: #0cf;*/
+    letter-spacing: .125rem;
+  
 }
 
+
+
 #intro .btn-get-started:hover {
-  background: #fff;
-  color: #0cf;
+  background: #0cf;
+  color: #fff;
+  border: 1px solid rgba(0,204,255);
 }
 
 /*--------------------------------------------------------------
@@ -552,7 +560,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .section-header h3 {
   font-size: 32px;
-  color: #111;
+  color: #0cf;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -642,11 +650,14 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  /*background: url("../img/about-bg.jpg") center top no-repeat fixed;
-  background-size: cover;*/
+  background: url("../img/about-bg2.jpg") center top no-repeat fixed;
+  background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
+  
 }
+
+
 
 #about::before {
   content: '';
@@ -655,8 +666,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   right: 0;
   top: 0;
   bottom: 0;
-  background: rgba(255, 255, 255, 0.92);
+  /*background: rgba(255, 255, 255, 0.92);*/
+
   z-index: 9;
+}
+
+#about .col-md-5 h2{
+  color: #0cf;
 }
 
 #about .container {
@@ -733,6 +749,121 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
 }
+
+.img-parcours{
+  transition: 0.4s;
+  transition: all .4s ease-in-out;
+
+}
+
+.img-parcours:hover
+{
+  
+  transform: scale(1.03);
+}
+
+
+
+
+
+/* Services WELCOME
+--------------------------------*/
+
+#welcome {
+  background: url("../img/mn_about.png");
+  max-width: 1920px;
+  height: 902px;
+  padding: 60px 0;
+}
+
+#welcome h2{
+  color: #0cf;
+  /*font-size: 1.25rem;*/
+  font-size: 25px;
+
+
+}
+
+#welcome h3{
+  font-size: 40px;
+  font-family: "Orgon-Thin";
+}
+
+#welcome p{
+  color: #999;
+}
+
+
+
+#welcome .row{
+  display: inblock;
+justify-content: center;
+}
+
+#welcome .col-md-4 .img-parcours {
+  margin-top: 200px;
+  margin-right: 50px;
+}
+
+#welcome .col-md-8 .presentation {
+  
+  margin-top: 100px;
+  margin-left: 50px;
+}
+
+#welcome .btn-get-started {
+    font-family: "Orgon-Thin", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255);
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    /*background: #0cf;*/
+    margin-left: 50px;
+    letter-spacing: .125rem;
+
+}
+
+#welcome .btn-get-started:hover {
+  /*background: #fff;*/
+  background: #0cf;
+  color: #fff;
+  border: 1px solid rgba(0,204,255);
+
+}
+
+#welcome .btn2-get-started {
+    font-family: "Orgon-Thin", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 32px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255);
+    transition: 0.5s;
+    margin: 10px;
+    color: #fff;
+    /*background: #0cf;*/
+    margin-left: 50px;
+    letter-spacing: .125rem;
+
+}
+
+#welcome .btn2-get-started:hover {
+  /*background: #fff;*/
+  background: #0cf;
+  color: #fff;
+  border: 1px solid rgba(0,204,255);
+
+}
+
+
 
 
 
@@ -904,11 +1035,18 @@ body.mobile-nav-active #mobile-nav-toggle {
 /* Portfolio Section
 --------------------------------*/
 
+
+
 #portfolio {
-  padding: 60px 0;
+  background: url(../img/about-bg2.jpg) center top no-repeat fixed;
+  background-size: cover;
+  padding: 60px 0 40px 0;
+  position: relative;
+
 }
 
 #portfolio #portfolio-flters {
+  background-color: #323232;
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
@@ -967,7 +1105,17 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-#portfolio .portfolio-wrap:hover {
+#portfolio .portfolio-wrap@:hover {
+  z-index: 10;
+    background: #000;
+    content: '';
+    display: block;
+    height: 40px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(45deg);
+    width: 40px;
     opacity: 1;
   -webkit-animation: flash 1.5s;
   animation: flash 1.5s;
@@ -1104,7 +1252,8 @@ body.mobile-nav-active #mobile-nav-toggle {
   text-transform: uppercase;
 }
 
-/* Clients Section
+
+* Clients Section
 --------------------------------*/
 
 #clients {
@@ -1643,3 +1792,149 @@ body.mobile-nav-active #mobile-nav-toggle {
     display: inline;
   }
 }
+
+
+
+#post-header {
+    padding-top: 240px;
+    padding-bottom: 80px;
+}
+.page-header {
+    position: relative;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 80px;
+    background-color: #1b1c1e;
+}
+.page-header {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+
+
+
+#introduction .carousel-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#introduction .carousel-container {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#introduction .carousel-background img {
+  max-width: 100%;
+}
+
+#introduction .carousel-content {
+  text-align: center;
+}
+
+#intro h2 {
+  color: #fff;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro p {
+  width: 80%;
+  margin: 0 auto 30px auto;
+  color: #fff;
+}
+
+#introduction .carousel-fade {
+  overflow: hidden;
+}
+
+#introduction .carousel-fade .carousel-inner .carousel-item {
+  transition-property: opacity;
+}
+
+#introduction .carousel-fade .carousel-inner .carousel-item,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-left,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-right {
+  opacity: 0;
+}
+
+#introduction .carousel-fade .carousel-inner .active,
+#introduction .carousel-fade .carousel-inner .carousel-item-next.carousel-item-left,
+#introduction .carousel-fade .carousel-inner .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+#introduction .carousel-fade .carousel-inner .carousel-item-next,
+#introduction .carousel-fade .carousel-inner .carousel-item-prev,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-left,
+#introduction .carousel-fade .carousel-inner .active.carousel-item-right {
+  left: 0;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+#introduction .carousel-control-prev,
+#introduction .carousel-control-next {
+  width: 10%;
+}
+
+#introduction .carousel-control-next-icon,
+#introduction .carousel-control-prev-icon {
+  background: none;
+  font-size: 32px;
+  line-height: 1;
+}
+
+#introduction .carousel-indicators li {
+  cursor: pointer;
+}
+
+#introduction .btn-get-started {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #0cf;
+}
+
+#introduction .btn-get-started:hover {
+  background: #fff;
+  color: #0cf;
+}
+
+
+
+
+
