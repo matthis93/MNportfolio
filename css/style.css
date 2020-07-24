@@ -11,7 +11,7 @@
 
 body {
   background-color: #161616 ;
-  color: #fff;
+  
   font-family: "Open Sans", sans-serif;
 }
 
@@ -650,7 +650,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #about {
-  background: url("../img/about-bg2.jpg") center top no-repeat fixed;
+  background: url("../img/about-bg3.jpg") center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
   position: relative;
@@ -672,7 +672,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #about .col-md-5 h2{
-  color: #0cf;
+  /*color: #0cf;*/
+  color:#2B9ED3;
 }
 
 #about .container {
@@ -745,9 +746,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 #about .about-col p {
   font-size: 14px;
   line-height: 24px;
-  color: #333;
+  color: #999;
   margin-bottom: 0;
   padding: 0 20px 20px 20px;
+}
+
+#about p{
+  color: #999;
 }
 
 .img-parcours{
@@ -917,7 +922,7 @@ justify-content: center;
 --------------------------------*/
 
 #call-to-action {
-  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.7)), url(../img/banniere3.png) fixed center center;
+  background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.7)), url(../img/mn_home.png) fixed center center;
   background-size: cover;
   padding: 60px 0;
 }
@@ -1046,7 +1051,7 @@ justify-content: center;
 }
 
 #portfolio #portfolio-flters {
-  background-color: #323232;
+  /*background-color: #323232;*/
   padding: 0;
   margin: 5px 0 35px 0;
   list-style: none;
@@ -1933,6 +1938,306 @@ justify-content: center;
   background: #fff;
   color: #0cf;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#article{
+    font-family: "orgon-thin";
+    /*box-shadow: inset 0 -250px 250px -100px ;*/
+    background: url("../img/background-clients2.png") center top no-repeat fixed,
+    url("../img/background-clients--large-background.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 40px 0;
+    position: relative;
+    
+
+}
+
+.container{
+    max-width: 1920px!important;
+
+}
+
+.row{
+    padding-left: 15rem;
+    padding-right: 15rem;
+}
+
+.card-body .row{
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+#search .form-control{
+    margin-right: 10px;
+    background-color: #323232 ;
+}
+
+
+.c-blog__detail-tag {
+    z-index: 1;
+    background: #0cf;
+    bottom: auto;
+    color: #0B0B0B;
+    font-weight: bold;
+    font-size: .625rem;
+    left: 0;
+    letter-spacing: 2px;
+    padding: .3125rem .625rem;
+    position: absolute;
+    text-transform: uppercase;
+    top: 0;
+}
+
+.c-blog__detail-tag:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 19px solid transparent;
+    border-right: 19px solid transparent;
+    position: absolute;
+    right: -25px;
+    border-bottom: none;
+    border-top: 19px solid #0cf;
+    transform: rotate(135deg);
+    top: -3px;
+}
+
+.col-lg-8{
+    padding-left: 0px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    background: #323232;
+    padding-right: 0px;
+}
+
+.col-lg-8 hr{
+    /*border-top: 1px solid rgba(255,255,255,0.2);*/
+    border-top: 0px solid ;
+}
+
+.col-lg-8 p {
+    color: #999;
+    padding-left: 2rem ;
+    padding-right: 2rem;
+}
+
+
+.col-lg-8 h1, h2, h3 {
+    color: #fff;
+    padding-left: 2rem ;
+    padding-right: 2rem;
+
+}
+
+.img-fluid {
+    padding-left: 2rem ;
+    padding-right: 2rem;
+}
+
+.img-intro {
+    padding-left: 0rem ;
+    padding-right: 0rem;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.video-fluid {
+    padding-left: 2rem ;
+    padding-right: 2rem;
+    width: 894px;
+    height: 560px;
+}
+
+
+
+.rounded {
+    border-radius: 0rem!important;
+}
+
+.card-header {
+    color: #fff;
+}
+
+
+.my-4{
+    margin-top: 0px!important;
+}
+
+.col-md-4 .card{
+    background-color: #1B1B1B;
+}
+
+.col-lg-6 a{
+    color: #0cf;
+}
+
+
+
+.col-lg-6 .col-lg {
+    background-color: green;
+}
+
+
+#compétences{
+    background: url("https://fullyillustrated.com/wp-content/themes/barebones/_assets/images/background-clients--medium.jpg") center top #161616;
+    background-size: auto;
+    padding: 7.5rem 0;
+    position: relative;
+    background-size: cover;
+    /*display: flex;
+    width: 100%;
+    flex-direction: row;*/
+    
+}
+
+
+#compétences .block-compétences{
+    z-index: 10;
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1440px;
+    top: 375.861px;
+    margin-bottom: 2.5rem;
+
+}
+
+.compétences{
+    vertical-align: middle;
+
+}
+
+.compétences .texte-compétences{
+    
+    text-align: left;
+    vertical-align: middle;
+    width: 35%;
+    display: inline-block
+}
+
+#compétences h3{
+    font-family: "orgon-thin";
+    font-size: 25px;
+    line-height: 1.4;
+    color: #0cf;
+    text-transform: uppercase
+    
+}
+
+#compétences h2{
+   font-family: "orgon-thin";
+   color: #fff;
+   margin-left: -.3125rem;
+   letter-spacing: -.125rem;
+   line-height: 1.1;
+   margin-bottom: 1.25rem;
+   font-size: 3.75rem;
+   font-weight: 200;
+}
+
+#compétences p {
+    font-family: "orgon-thin";
+   color: #999;
+   padding-left: 2rem;
+    padding-right: 2rem;
+    display: inline-block;
+
+}
+
+
+
+.block-logiciels{
+    vertical-align: middle;
+    padding-left: 0;
+    width: 64%;
+    display: inline-block;
+
+}
+
+.liste-compétences{
+    padding-left: 3.75rem;
+    margin: 0;
+    position: relative;
+    display: block;
+}
+
+.all-logiciels{
+    margin-bottom: 0;
+    margin-left: 0;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.31em;
+    display: block
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+
+.logiciels{
+    padding-left: 0;
+    background: rgba(255,255,255,0.08);
+    position: relative;
+    width: 20%;
+    vertical-align: top;
+    display: inline-block;
+    box-sizing: border-box;
+    letter-spacing: normal;
+    word-spacing: normal;
+
+
+}
+
+.logiciels:after{
+    background: #0B0B0B;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px;
+}
+
+.logiciels img{
+    display: block;
+    max-width: 100%;
+    width: 100%;
+}
+
+.logiciels:before{
+    background: #0B0B0B;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+#compétences .progress {
+    height: 35px;
+
+
+
 
 
 
