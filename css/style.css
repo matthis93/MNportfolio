@@ -171,15 +171,28 @@ h6 {
 --------------------------------------------------------------*/
 
 #intro {
-  display: table;
   width: 100%;
   height: 100vh;
   background: #000;
+  overflow: hidden;
+  position: relative;
+}
+
+@media (max-height: 500px) {
+  #intro {
+    height: 150vh;
+  }
+}
+
+#intro .carousel, #intro .carousel-inner, #intro .carousel-item, #intro .carousel-item::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
 }
 
 #intro .carousel-item {
-  width: 100%;
-  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -187,45 +200,26 @@ h6 {
 
 #intro .carousel-item::before {
   content: '';
-  background-color: rgba(0, 0, 0, 0.4);
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 #intro .carousel-container {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
   align-items: center;
   position: absolute;
   bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 70px;
+  left: 50px;
+  right: 50px;
 }
 
-#intro .carousel-background img {
-max-width: 100%;
-height: 1930,8896px;
-
-}
-
-#intro .carousel-content {
+#intro .carousel-container {
   text-align: center;
 }
+
+
+
 
 #intro h2 {
   color: #fff;
@@ -234,11 +228,19 @@ height: 1930,8896px;
   font-weight: 700;
 }
 
+@media (max-width: 768px) {
+  #intro h2 {
+    font-size: 28px;
+  }
+}
+
 #intro p {
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
 }
+
+
 
 #intro .carousel-fade {
   overflow: hidden;
@@ -266,17 +268,14 @@ height: 1930,8896px;
 #intro .carousel-fade .carousel-inner .active.carousel-item-left,
 #intro .carousel-fade .carousel-inner .active.carousel-item-right {
   left: 0;
-  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
-#intro .carousel-control-prev,
-#intro .carousel-control-next {
+#intro .carousel-control-prev, #intro .carousel-control-next {
   width: 10%;
 }
 
-#intro .carousel-control-next-icon,
-#intro .carousel-control-prev-icon {
+#intro .carousel-control-next-icon, #intro .carousel-control-prev-icon {
   background: none;
   font-size: 32px;
   line-height: 1;
@@ -300,15 +299,13 @@ height: 1930,8896px;
     color: #fff;
     /*background: #0cf;*/
     letter-spacing: .125rem;
-  
 }
-
-
 
 #intro .btn-get-started:hover {
   background: #0cf;
   color: #fff;
   border: 1px solid rgba(0,204,255);
+
 }
 
 /*--------------------------------------------------------------
