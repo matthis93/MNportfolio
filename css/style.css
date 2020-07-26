@@ -775,27 +775,49 @@ body.mobile-nav-active #mobile-nav-toggle {
 --------------------------------*/
 
 #welcome {
-  background: url("../img/mn_about.png");
-  max-width: 1920px;
-  height: 902px;
-  padding: 60px 0;
+  background: url("../img/mn_about.png")center top #161616;;
+  background-size: auto;
+  padding: 7.5rem 0;
+  position: relative;
+  background-size: cover;
+   
 }
 
-#welcome h2{
-  color: #0cf;
-  /*font-size: 1.25rem;*/
-  font-size: 25px;
-
-
+#welcome .section-header h3{
+  font-family: "orgon-thin";
+  text-align:left;
+    font-size: 25px;
+    line-height: 1.4;
+    color: #0cf;
+    padding-bottom: 0px!important;
+    
 }
 
-#welcome h3{
-  font-size: 40px;
-  font-family: "Orgon-Thin";
+#welcome .section-header h3::before, ::after{
+  background: none!important;
+    
 }
 
-#welcome p{
-  color: #999;
+#welcome .section-header h2{
+  font-family: "orgon-thin";
+   text-align: left;
+   color: #fff;
+   margin-left: -.3125rem;
+   letter-spacing: -.125rem;
+   line-height: 1.1;
+   margin-bottom: 1.25rem;
+   font-size: 3.75rem;
+   font-weight: 200;
+    
+}
+
+#welcome .section-header p{
+  font-family: "orgon-thin";
+  text-align: left;
+   color: #999;
+   padding-left: 2rem;
+    padding-right: 2rem;
+    display: inline-block;
 }
 
 
@@ -805,12 +827,12 @@ body.mobile-nav-active #mobile-nav-toggle {
 justify-content: center;
 }
 
-#welcome .col-md-4 .img-parcours {
+#welcome .col-md-4 img {
   margin-top: 200px;
   margin-right: 50px;
 }
 
-#welcome .col-md-8 .presentation {
+#welcome .col-md-8 .section-header {
   
   margin-top: 100px;
   margin-left: 50px;
@@ -829,8 +851,9 @@ justify-content: center;
     margin: 10px;
     color: #fff;
     /*background: #0cf;*/
-    margin-left: 50px;
+    margin-left: 80px;
     letter-spacing: .125rem;
+
 
 }
 
@@ -855,7 +878,7 @@ justify-content: center;
     margin: 10px;
     color: #fff;
     /*background: #0cf;*/
-    margin-left: 50px;
+    margin-left: 80px;
     letter-spacing: .125rem;
 
 }
@@ -869,6 +892,48 @@ justify-content: center;
 }
 
 
+@media(max-width:768px){
+  #welcome .section-header h3{
+    text-align: center;
+    padding-left: 0rem;
+    
+    
+  }
+}
+
+
+@media(max-width:768px){
+  #welcome .section-header h2{
+    font-size: 2rem;
+    text-align: center;
+    padding-left: 0rem;
+    
+  }
+}
+
+@media(max-width:768px){
+  #welcome .section-header p{
+    padding-left: 0rem;
+    
+    text-align: center;
+  }
+}
+
+
+@media(max-width:768px){
+  #welcome img{
+    text-align: center;
+    margin-top: 0px!important;
+    margin-right: 0px!important;
+  }
+}
+
+@media(max-width:768px){
+  #welcome a{
+    margin-left: 60px!important;
+    text-align: center;
+  }
+}
 
 
 
