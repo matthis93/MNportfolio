@@ -2363,3 +2363,145 @@ justify-content: center;
   }
 }
 
+
+
+
+
+
+
+
+
+#project {
+  background-color: #0B1933;
+}
+
+
+#project .container{
+
+max-width: 1412px;
+margin-top: -12.5rem;
+}
+
+#project .my-4{
+  color: #fff;
+    letter-spacing: -.125rem;
+    font-weight: 200;
+}
+
+#project .row .col-md-8{
+  width: 942px;
+    display: block;
+    margin: 0;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#project .row .col-md-4{
+  width: 470px;
+    background-color: #040505;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+#project .col-md-4 .my-3{
+  font-family: "Orgon-Thin";
+    margin-bottom: 1rem!important;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    padding: 1.5625rem 0;
+    /*color: #cc0081;*/
+    color: #F2CD40;
+    font-size: 3.75rem;
+    letter-spacing: -.125rem;
+    font-weight: 200;
+}
+
+
+#project .col-md-4 h3, p{
+margin-left: 10px;
+margin-right: 10px;
+}
+
+#project .col-md-4 p{
+  margin-left: 10px;
+    color: #867d87;
+    line-height: 1.6;
+    margin-right: 10px;
+
+}
+
+#project .col-md-4 ul{
+  color: #867d87;
+}
+
+#project .row .col-md-3 .col-sm-6 .mb-4{
+  position: relative;
+  overflow: hidden;
+}
+
+#project .row .col-md-3 .col-sm-6 .mb-4 img{
+  transition: all 180ms ease-in-out, transform 500ms ease-in-out, filter 500ms ease-in-out;
+}
+
+#project .row .col-md-3 .col-sm-6 .mb-4 a {
+    background-color: transparent;
+    cursor: pointer;
+}
+
+#project .c-projects__underline {
+    z-index: 100;
+    background: inherit;
+    content: '';
+    display: block;
+    height: .125rem;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+}
+
+#project .c-projects__triangle {
+    z-index: 11;
+    background: #000;
+    content: '';
+    display: block;
+    height: 40px;
+    opacity: 0;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(45deg);
+    width: 40px;
+}
+
+#project .c-projects__imageWrapper:after {
+    z-index: 10;
+    background: #000;
+    content: '';
+    display: block;
+    height: 40px;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    transform: rotate(45deg);
+    width: 40px;
+}
+
+#project .vidéo-project iframe{
+    width: 100%;
+    height: 100%
+    
+}
+
+#project .img-fluid{
+  padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+
+
+#project .col-md-8{
+  background-color: #040505;
+}
+
+
+
