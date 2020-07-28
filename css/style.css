@@ -1235,6 +1235,12 @@ justify-content: center;
 
 }
 
+#portfolio .img-fluid{
+ padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+
 #portfolio .portfolio-item figure .link-preview,
 #portfolio .portfolio-item figure .link-details {
   position: absolute;
