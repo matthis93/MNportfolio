@@ -53,7 +53,14 @@
       <div id="logo" class="pull-left">
         <!--<h1><a href="#intro" class="scrollto">BizPage</a></h1>
         Uncomment below if you prefer to use an image logo -->
-        <a href="#intro"><img src="img/logomn2.png" alt="" title="" /></a>
+       <a href="#intro" class="c-navigation__icon c-navigation__icon" title="Fully Illustrated - Home">
+          <!--<img src="img/logoMN.svg" alt="" title="" />-->
+         <svg>
+            <image class="logoMN"  xlink:href="img/logoMN.svg"/>
+            <image class="logoMN2" xlink:href="img/logoMN2.svg"/>
+          </svg>
+        </a>
+        
       </div>
 
       <nav id="nav-menu-container">
@@ -61,9 +68,9 @@
           <li class="menu-active"><a href="#intro">Accueil</a></li>
           <li><a href="#about">A propos de moi</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#skills">Compétences</a></li>
-          <!--<li><a href="#services">Services</a></li>
-          <li class="menu-has-children"><a href="">Drop Down</a>
+          <li><a href="#skills">Compétences</a></li>-->
+          <!--<li><a href="#services">Services</a></li>-->
+          <!--<li class="menu-has-children"><a href="">Drop Down</a>
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li><a href="#">Drop Down 3</a></li>
@@ -75,8 +82,10 @@
           <li><a href="page.html">Rapport de stage</a></li>
         </ul>
       </nav><!-- #nav-menu-container -->
-    </div>
-  </header><!-- #header -->
+   </div>
+  </header><!-- #header-->
+
+  
 
   <!--==========================
     Intro Section
@@ -239,28 +248,14 @@
 
         <br>
         <br>
-        <div class="row">
-        <div class="col-md-7">
-          <div class="img-parcours">
-            <img class="img-fluid rounded mb-3 mb-md-0" src="img/bac.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-5">
-          <h2><strong>Bienvenue MN  Design ! </strong></h2>
-          <p>J’ai passé un Baccalauréat Economique & social Juin 2017, Puis je suis rentré en Septembre 2017 à L’ESD Paris pour son côté polyvalent en plus du digital qui m’intéressais beaucoup.</p>
-          
-        </div>
-      </div>
-      <!-- /.row -->
-
-      <hr>
+        
 
 
       <!-- Project Two -->
       <div class="row">
         <div class="col-md-5">
-          <h2><strong>Rentrée à l'ESD</strong></h2>
-          <p>En Septembre 2017, j'ai intégré l'ESD à Paris pour son côté polyvalent en plus du digital qui m'intéressais beaucoup.</p>
+          <h2><strong>ESD Paris</strong></h2>
+          <p>En Septembre 2017, j'ai intégré l'ESD (École Supérieure du Digital) à Paris pour son côté polyvalent. J'ai passé 3 ans à ESD pour passer un Bachelor "chef de projet digital".</p>
         </div>
         <div class="col-md-7">
           <div class="img-parcours">
@@ -281,7 +276,7 @@
         </div>
         <div class="col-md-5">
           <h2><strong>Stage chez Meteors</strong></h2>
-          <p>De Fevrier à Avril 2018, j'ai eu la chance d'être prit en Stage chez Meteoers à Lille qui est une agence de Data Marketing. En plus de cela j'ai pu passer ma certification google ateliers numériques pour en apprendre davantage en Stage.</p>
+          <p>De Fevrier à Avril 2018, j'ai eu la chance d'être prit en Stage chez Meteors à Lille qui est une agence de Data Marketing. De plus, j'ai pu passer ma certification google ateliers numériques pour en apprendre davantage en Stage.</p>
           
         </div>
       </div>
@@ -293,8 +288,8 @@
       <div class="row">
         <div class="col-md-5">
           <h2><strong>L'agence [SFEIR]</strong></h2>
-          <p>En Avril 2019, j'intégrerai l'agence de developpement SFEIR dans l'équipe de Design.
-              <br>En 2020, je suis alternant chez sfeir depuis 1 an. vous pouvez consulter mon rapport de stage de cette année</p>       
+          <p>En Avril 2019, J'ai intégré l'agence de developpement SFEIR dans l'équipe de Design luxe pour un stage de 4mois.
+            <br>En 2020, je suis alternant chez sfeir depuis 1 an en tant que UX /UI Designer. vous pouvez consulter mon rapport de d'expérience de cette année</p>       
         </div>
         <div class="col-md-7">
           <div class="img-parcours">
@@ -456,20 +451,21 @@
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">Tout</li>
-              <li data-filter=".filter-app">Application</li>
-              <li data-filter=".filter-creation">Creations</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-application">Application</li>
+              <li data-filter=".filter-logo">Logo</li>
+              <li data-filter=".filter-website">Website</li>
+              <li data-filter=".filter-creation">Creation</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-creation wow fadeInUp">
             <div class="portfolio-wrap">
 
               <figure class="c-projects__imageWrapper">
-                <img src="img/affiche-starwars.png" class="img-fluid" alt="">
+                <img src="img/affiche-starwars2.png" class="img-fluid" alt="">
                 <span class="c-projects__underline" style="background-color: #cc0081"></span>
                 <span class="c-projects__triangle" style="background-color: #cc0081"></span>
                 <a href="img/affiche-starwars.png" data-lightbox="portfolio" data-title="Application 1" class="link-preview" title="Preview"><i class="ion ion-eye"></i></a>
@@ -478,12 +474,12 @@
 
               <div class="portfolio-info">
                 <h4><a href="#">Affiche Star wars animée</a></h4>
-                <p>Création</p>
+                <p>Creation</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-website wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/web1.png" class="img-fluid" alt="">
@@ -493,12 +489,12 @@
 
               <div class="portfolio-info">
                 <h4><a href="#">Page promotionnelle</a></h4>
-                <p>Web</p>
+                <p>Website</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-application wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/app4.png" class="img-fluid" alt="">
@@ -513,7 +509,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-creation wow fadeInUp">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-logo wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/esdpixel.png" class="img-fluid" alt="">
@@ -522,14 +518,14 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Création 1</a></h4>
-                <p>Création</p>
+                <h4><a href="#">ESD logo redesign pixel</a></h4>
+                <p>Logo</p>
               </div>
             </div>
           </div>
 
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-creation wow fadeInUp">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-logo wow fadeInUp">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/spacewolf.png" class="img-fluid" alt="">
@@ -538,8 +534,8 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Création 2</a></h4>
-                <p>Création</p>
+                <h4><a href="#">Space Wolf typography</a></h4>
+                <p>Logo</p>
               </div>
             </div>
           </div>
@@ -554,14 +550,14 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Création 3</a></h4>
-                <p>Création</p>
+                <h4><a href="#">banner shibi manga</a></h4>
+                <p>Creation</p>
               </div>
             </div>
           </div>
 
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-website wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/web2.png" class="img-fluid" alt="">
@@ -571,12 +567,12 @@
 
               <div class="portfolio-info">
                 <h4><a href="#">Page promotionnelle</a></h4>
-                <p>Web</p>
+                <p>Website</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-application wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/app7.png" class="img-fluid" alt="">
@@ -600,13 +596,13 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Création 4</a></h4>
-                <p>Création</p>
+                <h4><a href="#">Banner ESD games</a></h4>
+                <p>Creation</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-creation wow fadeInUp" data-wow-delay="0.1s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-logo wow fadeInUp" data-wow-delay="0.1s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/esdpolygon.png" class="img-fluid" alt="">
@@ -615,13 +611,13 @@
               </figure>
 
               <div class="portfolio-info">
-                <h4><a href="#">Création 5</a></h4>
-                <p>Création</p>
+                <h4><a href="#">ESD logo redesign 2</a></h4>
+                <p>Logo</p>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web wow fadeInUp" data-wow-delay="0.2s">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-website wow fadeInUp" data-wow-delay="0.2s">
             <div class="portfolio-wrap">
               <figure>
                 <img src="img/web3.png" class="img-fluid" alt="">
@@ -631,7 +627,7 @@
 
               <div class="portfolio-info">
                 <h4><a href="#">Page promotionnelle</a></h4>
-                <p>Web</p>
+                <p>Website</p>
               </div>
             </div>
           </div>
@@ -645,7 +641,7 @@
 <!--==========================
       compétences (skills 2)
     ============================-->
-<section id="compétences">
+<section id="skills">
         <div class="container">
           <div class="row">
         <div class="col-md-4">
@@ -723,9 +719,9 @@
     ============================-->
     <section id="call-to-action" class="wow fadeIn">
       <div class="container text-center">
-        <h3>Mon parcours, mes compétences et mes expériencesà trvers mon CV</h3>
-        <p> Afin de voir plus en détails mes missions dans mes différentes expérience voici mon CV que vous pouvez télécharger. Contactez-moi si vous êtes intéressé par mon profile.</p>
-        <a class="cta-btn" href="img/cv_matthis_nho.pdf" download="cv_matthis_nho.pdf">Télécharger mon CV</a>
+        <h3>Mon parcours, mes compétences et mes expériencesà travers mon CV</h3>
+        <p> Afin de voir plus en détails mes missions dans mes différentes expériences voici mon CV que vous pouvez télécharger. Contactez-moi si vous êtes intéressé par mon profile.</p>
+        <a class="cta-btn" href="img/CV_MATTHIS_2021.png" download="CV_MATTHIS_2021.png">Télécharger mon CV</a>
       </div>
     </section><!-- #call-to-action -->
 
@@ -977,7 +973,7 @@
 
         <div class="section-header">
           <h3>Contactez-moi</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+          <p>Si vous avez des projets n'hésitez pas à me contacter concernant le design d'interface d'application, de site web, d'object connzctés, des logos, du motion et de la vidéo.</p>
         </div>
 
         <div class="row contact-info">
@@ -994,6 +990,7 @@
             <div class="contact-phone">
               <i class="ion-ios-telephone-outline"></i>
               <h3>téléphone</h3>
+              <br>
               <p>06 01 19 05 31</p>
             </div>
           </div>
@@ -1002,6 +999,7 @@
             <div class="contact-email">
               <i class="ion-ios-email-outline"></i>
               <h3>Email</h3>
+              <br>
               <p><a href="mailto:nhomatthis01@gmail.com">nhomatthis01@gmail.com</a></p>
             </div>
           </div>
@@ -1048,7 +1046,17 @@
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
-            <a href="#intro"><img src="img/logo_MN.png" alt="" title="" /></a>
+            <div id="logo" class="pull-left">
+        <!--<h1><a href="#intro" class="scrollto">BizPage</a></h1>
+        Uncomment below if you prefer to use an image logo -->
+        <a href="#intro" class="c-navigation__icon2 c-navigation__icon2" title="Fully Illustrated - Home">
+          <!--<img src="img/logoMN.svg" alt="" title="" />-->
+          <br>
+          <svg>
+            <image class="logoMN3" xlink:href="img/logoMN3.svg"></image>
+        </a>
+        
+      </div>
             
           </div>
 
@@ -1069,8 +1077,9 @@
               <!--A108 Adam Street <br>
               New York, NY 535022<br>
               United States <br>-->
-              <strong>Téléphone:</strong> 06 01 19 05 31<br>
-              <strong>Email:</strong> nhomatthis01@gmail.com<br>
+              <strong>Téléphone:</strong> 06 01 19 05 31</p>
+
+              <p><strong>Email:</strong> nhomatthis01@gmail.com<br>
             </p>
 
             <div class="social-links">

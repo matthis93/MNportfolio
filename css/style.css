@@ -31,6 +31,7 @@ a:focus {
 p {
   padding: 0;
   margin: 0 0 30px 0;
+  font-size: 20px;
 }
 
 h1,
@@ -125,8 +126,8 @@ h6 {
 --------------------------------------------------------------*/
 
 #header {
-  padding: 30px 0;
-  height: 92px;
+  padding: 20px 0;
+  height: 73px;
   position: fixed;
   left: 0;
   top: 0;
@@ -136,14 +137,20 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.5);
   padding: 20px 0;
-  height: 75px;
+  height: 73px;
   transition: all 0.5s;
 }
 
 #header #logo {
   float: left;
+  /*padding: 20px 0;*/
+}
+#header .container-fluid{
+  padding-left: 0px!important;
+  padding-right: 0px!important;
+
 }
 
 /*#header #logo h1 {
@@ -172,11 +179,13 @@ h6 {
 
 #intro {
   width: 100%;
-  height: 100vh;
+  /*height: 100vh;*/
   background: #000;
   overflow: hidden;
   position: relative;
 }
+
+
 
 @media (max-height: 500px) {
   #intro {
@@ -185,7 +194,7 @@ h6 {
 }
 
 #intro .carousel, #intro .carousel-inner, #intro .carousel-item, #intro .carousel-item::before {
-  position: absolute;
+  /*position: absolute;*/
   top: 0;
   right: 0;
   left: 0;
@@ -233,6 +242,8 @@ h6 {
     font-size: 28px;
   }
 }
+
+
 
 #intro p {
   width: 80%;
@@ -386,6 +397,8 @@ h6 {
   display: inline-block;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+  f/*ont-family: "Orgon-Thin", sans-serif;*/
+  font-weight: 400;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
@@ -436,7 +449,7 @@ h6 {
   right: 0;
   top: 0;
   z-index: 999;
-  margin: 20px 20px 0 0;
+  /*margin: 20px 20px 0 0;*/
   border: 0;
   background: none;
   font-size: 24px;
@@ -1108,9 +1121,21 @@ justify-content: center;
   background: url(../img/about-bg2.jpg) center top no-repeat fixed;
   background-size: cover;
   padding: 60px 0 40px 0;
+  /*padding: 11.875rem 0;*/
   position: relative;
+  box-shadow: inset 0 150px 150px -50px rgba(0,0,0,0.8);
+  
 
 }
+
+#portfolio .container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1440px;
+}
+
+
+
 
 #portfolio #portfolio-flters {
   /*background-color: #323232;*/
@@ -1124,15 +1149,21 @@ justify-content: center;
   cursor: pointer;
   margin: 15px 15px 15px 0;
   display: inline-block;
-  padding: 10px 20px;
-  font-size: 12px;
+  /*padding: 10px 20px;*/
+  font-size: 14px;
   line-height: 20px;
   color: #666666;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   text-transform: uppercase;
-  background: #fff;
+  /*background: #fff;*/
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+
+  font-family: "Orgon-Thin", sans-serif;
+  border-radius: 50px;
+  border: 1px solid rgba(255,255,255);
+  padding: 8px 32px;
+  letter-spacing: .125rem;
 }
 
 #portfolio #portfolio-flters li:hover,
@@ -1147,8 +1178,8 @@ justify-content: center;
 
 #portfolio .portfolio-wrap {
   width: 100%;
-    border-top-left-radius: calc(.25rem - 1px);
-    border-top-right-radius: calc(.25rem - 1px);
+  border-top-left-radius: calc(.25rem - 1px);
+  border-top-right-radius: calc(.25rem - 1px);
 
 
 
@@ -1226,7 +1257,10 @@ justify-content: center;
   display: flex;
   flex-direction: column;
     transition: all 0.5s;
+
+
 }
+
 
 #portfolio .portfolio-item figure:hover {
   background-color: #ffffff;
@@ -1237,7 +1271,11 @@ justify-content: center;
 
 #portfolio .img-fluid{
  padding-left: 0rem;
-    padding-right: 0rem;
+padding-right: 0rem;
+/*height: 240px*/
+
+
+
 }
 
 
@@ -1326,7 +1364,7 @@ justify-content: center;
 }
 
 
-* Clients Section
+/* Clients Section
 --------------------------------*/
 
 #clients {
@@ -1809,10 +1847,7 @@ justify-content: center;
     padding: 20px 0;
   }
 
-  
-
-
-  #contact .contact-phone {
+    #contact .contact-phone {
     border-left: 1px solid #ddd;
     border-right: 1px solid #ddd;
   }
@@ -1826,19 +1861,22 @@ justify-content: center;
 
 @media (min-width: 1024px) {
   #header #logo {
-    padding-left: 60px;
+    padding-left: 0px;
   }
+
 
 
   #intro .carousel-control-prev,
   #intro .carousel-control-next {
     width: 5%;
   }
-
   #nav-menu-container {
-    padding-right: 60px;
+   padding: 20px 0;
+   background: black;
+   margin-top: -20px;
   }
 }
+
 
 @media (max-width: 768px) {
   .back-to-top {
@@ -1865,6 +1903,9 @@ justify-content: center;
 
   #mobile-nav-toggle {
     display: inline;
+    background-color: black;
+    width: 72px;
+    height: 72px;
   }
 }
 
@@ -1925,15 +1966,24 @@ justify-content: center;
   right: 0;
 }
 
-#introduction .carousel-background img {
-  max-width: 100%;
+/*#introduction .carousel-background img {
+  width: 100%;
 }
 
 #introduction .carousel-content {
   text-align: center;
+}*/
+
+ .carousel-background img {
+  width: 100%;
+}
+
+.carousel-content {
+  text-align: center;
 }
 
 #intro h2 {
+  font-family: "Orgon-Thin", sans-serif;
   color: #fff;
   margin-bottom: 30px;
   font-size: 48px;
@@ -1941,12 +1991,13 @@ justify-content: center;
 }
 
 #intro p {
+  font-family: "Orgon-Thin", sans-serif;
   width: 80%;
   margin: 0 auto 30px auto;
   color: #fff;
 }
 
-#introduction .carousel-fade {
+/*#introduction .carousel-fade {
   overflow: hidden;
 }
 
@@ -2009,7 +2060,7 @@ justify-content: center;
 #introduction .btn-get-started:hover {
   background: #fff;
   color: #0cf;
-}
+}*/
 
 
 
@@ -2177,7 +2228,7 @@ justify-content: center;
 /*--------------------------------------------------------------
 # compétences
 --------------------------------------------------------------*/
-#compétences{
+#skills{
     background: url("https://fullyillustrated.com/wp-content/themes/barebones/_assets/images/background-clients--medium.jpg") center top #161616;
     background-size: auto;
     padding: 7.5rem 0;
@@ -2189,7 +2240,7 @@ justify-content: center;
     
 }
 
-#compétences .container{
+#skills .container{
     z-index: 10;
     /*padding-left: 3.75rem;
     padding-right: 3.75rem;*/
@@ -2202,11 +2253,11 @@ justify-content: center;
 
 }
 
-#compétences{
+#skills{
   vertical-align: middle;
 }
 
-#compétences .section-header h3{
+#skills .section-header h3{
   font-family: "orgon-thin";
   text-align:left;
     font-size: 25px;
@@ -2216,12 +2267,12 @@ justify-content: center;
     
 }
 
-#compétences .section-header h3::before, ::after{
+#skills .section-header h3::before, ::after{
   background: none!important;
     
 }
 
-#compétences .section-header h2{
+#skills .section-header h2{
   font-family: "orgon-thin";
    text-align: left;
    color: #fff;
@@ -2234,7 +2285,7 @@ justify-content: center;
     
 }
 
-#compétences .section-header p{
+#skills .section-header p{
   font-family: "orgon-thin";
   text-align: left;
    color: #999;
@@ -2244,14 +2295,14 @@ justify-content: center;
 }
 
 
-#compétences .col-md-4{
+#skills .col-md-4{
   text-align: left;
     vertical-align: middle;
     
     display: inline-block
 }
 
-#compétences .col-md-8{
+#skills .col-md-8{
   vertical-align: middle;
     padding-left: 0;
     
@@ -2327,7 +2378,7 @@ justify-content: center;
 
 
 @media(max-width:768px){
-  #compétences .section-header h3{
+  #skills .section-header h3{
     text-align: center;
     
   }
@@ -2335,28 +2386,28 @@ justify-content: center;
 
 
 @media(max-width:768px){
-  #compétences .section-header h2{
+  #skills .section-header h2{
     font-size: 2.75rem;
     text-align: center;
   }
 }
 
 @media(max-width:768px){
-  #compétences .section-header p{
+  #skills .section-header p{
     
     text-align: center;
   }
 }
 
 @media(max-width:768px){
-  #compétences .liste-compétences{
+  #skills .liste-compétences{
     padding-left: 0rem;
     text-align: center;
   }
 }
 
 @media(max-width:768px){
-  #compétences .col-md-8{
+  #skills .col-md-8{
     
     text-align: center;
     padding-left: 15px;
@@ -2364,7 +2415,7 @@ justify-content: center;
 }
 
 @media(max-width:768px){
-  #compétences .all-logiciels{
+  #skills .all-logiciels{
     padding-inline-start: 0px;
   }
 }
@@ -2386,6 +2437,7 @@ justify-content: center;
 
 max-width: 1412px;
 margin-top: -12.5rem;
+margin-bottom: 4rem;
 }
 
 #project .my-4{
@@ -2400,6 +2452,12 @@ margin-top: -12.5rem;
     margin: 0;
     padding-right: 0px;
     padding-left: 0px;
+}
+
+
+
+#project .embed-responsive embed-responsive-16by9:before{
+  padding-top: 54.25%;
 }
 
 #project .row .col-md-4{
@@ -2423,13 +2481,26 @@ margin-top: -12.5rem;
 
 
 #project .col-md-4 h3, p{
-margin-left: 10px;
-margin-right: 10px;
+/*margin-left: 10px;
+margin-right: 10px;*/
 }
 
 #project .col-md-4 p{
+  font-size: 1rem;
   margin-left: 10px;
     color: #867d87;
+    line-height: 1.6;
+    margin-right: 10px;
+    padding: 1.5625rem 0;
+    margin-bottom: : 1.875rem;
+    /*border-bottom: 1px solid rgba(255,255,255,0.2);*/
+
+}
+
+#project .col-md-4 h4{
+  font-size: 1.125rem;
+  margin-left: 10px;
+    color: #F2CD40;
     line-height: 1.6;
     margin-right: 10px;
 
@@ -2453,7 +2524,7 @@ margin-right: 10px;
     cursor: pointer;
 }
 
-#project .c-projects__underline {
+.c-projects__underline {
     z-index: 100;
     background: inherit;
     content: '';
@@ -2465,7 +2536,7 @@ margin-right: 10px;
     width: 0;
 }
 
-#project .c-projects__triangle {
+.c-projects__triangle {
     z-index: 11;
     background: #000;
     content: '';
@@ -2479,7 +2550,7 @@ margin-right: 10px;
     width: 40px;
 }
 
-#project .c-projects__imageWrapper:after {
+.c-projects__imageWrapper:after {
     z-index: 10;
     background: #000;
     content: '';
@@ -2492,6 +2563,13 @@ margin-right: 10px;
     width: 40px;
 }
 
+
+@media screen and (min-width: 1024px){
+.c-projects__link:hover .c-projects__triangle, .c-projects__link:focus .c-projects__triangle, .c-projects__link:active .c-projects__triangle {
+    opacity: 1;
+}
+}
+
 #project .vidéo-project iframe{
     width: 100%;
     height: 100%
@@ -2499,7 +2577,7 @@ margin-right: 10px;
 }
 
 #project .img-fluid{
-  padding-left: 2rem;
+  padding-left: 0rem;
     padding-right: 2rem;
 }
 
@@ -2508,6 +2586,64 @@ margin-right: 10px;
 #project .col-md-8{
   background-color: #040505;
 }
+
+
+
+@media screen and (min-width: 768px) {
+  #portfolio .container {
+    padding-left: 3.75rem;
+    padding-right: 3.75rem;
+  }}
+
+
+
+@media screen and (min-width: 768px){
+.c-navigation__icon {
+    height: 4.5rem;
+    /*line-height: 4.25rem;
+    padding: 0 1.25rem;*/
+    width: 4.5rem;
+}}
+
+
+.c-navigation__icon svg {
+    z-index: 100;
+    background: #FFFFFF;
+    /*color: #0B0B0B;*/
+    display: inline-block;
+    height: 72px;
+    line-height: 3.125rem;
+    /*padding: 20px .8125rem;*/
+    position: relative;
+    text-decoration: none;
+    transition: color 110ms ease-in-out, background 110ms ease-in-out;
+    width: 72px;
+    margin-top: -20px;
+}
+
+
+.c-navigation__icon .logoMN{
+height: 72px;
+margin: : 10px;
+}
+
+.c-navigation__icon .logoMN2{
+height: 72px;
+opacity: 0%;
+}
+
+.c-navigation__icon svg:hover{
+   background: #0cf;
+}
+
+
+
+.c-navigation__icon2 .logoMN3{
+height: 180px;
+}
+
+
+
 
 
 

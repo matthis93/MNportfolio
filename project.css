@@ -587,12 +587,6 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 
-
-
-
-
-
-
 #introduction {
 	background-color: #0B1933;
 }
@@ -601,7 +595,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 max-width: 1412px;
 margin-top: -12.5rem;
-}
+margin-bottom: 4rem;}
 
 .my-4{
 	color: #fff;
@@ -639,6 +633,8 @@ margin-top: -12.5rem;
 
 .col-md-4 h3, p{
 margin-left: 10px;
+
+
 }
 
 .col-md-4 p{
