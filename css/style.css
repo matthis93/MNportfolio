@@ -249,10 +249,19 @@ h6 {
   left: 0px;
   right: 0px;
 }
-
+@media screen and (min-width: 768px){
 #intro .carousel-container {
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
+}
+}
+
+@media screen and (min-width: 768px){
+#intro .carousel-container {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 30px;
+}
 }
 
 
@@ -1948,7 +1957,26 @@ padding-right: 0rem;
   }
 
   #intro h2 {
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  #intro p{
+    margin: 0 auto 10px auto;
+    font-size: 16px!important;
+  }
+
+  #intro .carousel-content{
+        padding-top: 40px;
+  }
+
+  #intro .carousel-container{
+    background-color: rgba(0, 0, 0, 0.5);
+
+  }
+
+  .c-projects__triangle {
+    right: -35px;
   }
 
   #nav-menu-container {
@@ -2064,21 +2092,6 @@ padding-right: 0rem;
 }
 
 
-#intro h2 {
-  font-family: "Orgon-Thin", sans-serif;
-  color: #fff;
-  margin-bottom: 30px;
-  font-size: 48px;
-  font-weight: 700;
-}
-
-#intro p {
-  font-family: "Orgon-Thin", sans-serif;
-  width: 80%;
-  margin: 0 auto 30px auto;
-  color: #fff;
-  
-}
 
 /*#introduction .carousel-fade {
   overflow: hidden;
